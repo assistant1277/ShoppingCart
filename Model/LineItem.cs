@@ -19,7 +19,7 @@ namespace ShoppingCart.Model
             Quantity = quantity;
         }
 
-        //method to calculate total cost of line item means -> quantity * price after discount
+        //method to calculate total cost of line item means -> quantity*price after discount
         public double CalculateLineItemCost()
         {
             return Quantity*Product.CalculateDiscountedPrice();
